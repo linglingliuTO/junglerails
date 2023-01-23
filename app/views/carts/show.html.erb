@@ -31,7 +31,7 @@
       </tfoot>
     </table>
   </div>
-
+<%if cart_subtotal_cents>0 %>
   <div class="row">
     <div class="col-xs-12">
       <%= form_tag orders_path do %>
@@ -45,6 +45,9 @@
           data-email="kvirani@gmail.com"
           data-currency="cad">
         </script>
+         <% end %>
+    <% else  %>
+    <div> Cart is empty add item to checkout </div>
       <% end %>
     </div>
   </div>
