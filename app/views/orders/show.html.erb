@@ -10,8 +10,7 @@
       <% line_items.each do |line_item| %>
         <%= render 'item', product_id: line_item.product_id, line_total: line_item.total_price %>
       <% end %>
-      Your order total: <%= humanized_money_with_symbol @order.total %> <br/>
-       
+     
       </h4>
   </div>
 
